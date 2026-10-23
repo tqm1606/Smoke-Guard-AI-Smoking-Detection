@@ -1,0 +1,20 @@
+# Secrets and local settings
+.env
+*.pem
+key.pem
+cert.pem
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Generated inputs and outputs
+uploads/
+static/results/
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/

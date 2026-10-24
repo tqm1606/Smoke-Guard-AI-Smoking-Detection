@@ -74,4 +74,3 @@ python -c "import custom_yolo_blocks; from ultralytics import YOLO; m=YOLO('mode
 ```
 
 Chỉ đổi `split='test'` nếu YAML có split test được gán nhãn. Import `custom_yolo_blocks` trước khi load weights để Ultralytics nạp đúng kiến trúc EMA/LSKA. Ghi phiên bản Ultralytics/PyTorch, hash checkpoint và dataset, ngày chạy, số ảnh/box, thiết bị, batch, resolution, confidence/IoU settings cùng bốn chỉ số vào **dòng mới** của `results.csv`; giữ dòng checkpoint lịch sử để phân biệt nguồn. Có thể thay `device='cpu'` bằng GPU thực tế. Chỉ báo FPS sau khi đo có warmup, số lần lặp, cùng phần cứng, batch và resolution.
-
